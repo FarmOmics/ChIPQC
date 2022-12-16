@@ -1,0 +1,25 @@
+workdir: /group/zhougrp3/zhoulab3/liqi/pig
+sample_file: samples.txt
+tissues: [Bladder, BMarrow, Heart, Kidney, Mammarygland, Ovary, Skin, Testis, Thymus, Thyroidgland]
+reps: [6796, 6797, 6798, 6800, P348, P350]
+narrow_peaks: [H3K4me3, H3K4me1, H3K27ac]
+broad_peaks: [H3K27me3, ATAC, DNaseSeq]
+no_input: [ATAC]
+inputs: [Input]
+H3K4me3_input: Input
+H3K27me3_input: Input
+H3K4me1_input: Input
+H3K27ac_input: Input
+CTCF_input: Input
+genome: /group/zhougrp/zhoulab/GENOMES/Pig/UCSC/Feb.2017/susScr11/susScr11.fa
+genomesize: 2501895775
+annotation: /group/zhougrp/zhoulab/GENOMES/Pig/UCSC/Feb.2017/susScr11/susScr11.ensGene.gtf
+mapq: 30
+
+ChromHMM_assays: [H3K4me3, H3K27ac, H3K4me1, H3K27me3]
+ChromHMM_tissues: [Bladder, BMarrow, Heart, Kidney, Mammarygland, Ovary, Skin, Testis, Thymus, Thyroidgland]
+ChromHMM_genome: susScr11
+
+tempdir: Temp
+chromsizes: /group/zhougrp/zhoulab/GENOMES/Pig/UCSC/Feb.2017/susScr11/susScr11.chrom.sizes
+bad_libraries: []
