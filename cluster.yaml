@@ -1,0 +1,33 @@
+__default__:
+  partition: "high"
+  nodes: 1
+  cpus: "{threads}"
+  mem: 12G
+  name: "{rule}.{wildcards}"
+  output: "Logs/{rule}.{wildcards}.%j.out"
+  time: "1-0"
+
+trim_reads:
+  partition: "high"
+  mem: 12G
+  cpus: 12
+
+bwa_mem:
+  partition: "high"
+  mem: 48G
+
+sort_bam:
+  partition: "bmh"
+  mem: 12G        
+
+mark_duplicates:
+  partition: "bmm"
+  mem: 4G
+spp_stats:
+  partition: "bmm"
+  mem: 4G
+
+namesort_bam:
+  partition: "bmh"
+  time: "7-0"
+  mem: 12G
